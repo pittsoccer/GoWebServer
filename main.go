@@ -11,7 +11,7 @@ func handler(response http.ResponseWriter, request *http.Request) {
 	fmt.Fprintf(response, "<h1>Hello Bryce!</h1>")
 
 	// output time
-	fmt.Fprintf(response, "<h3> The time is: ")
+	fmt.Fprintf(response, "<body> The time is: ")
 	fmt.Fprintf(response, time.Now().Format(time.RFC1123))
 }
 
